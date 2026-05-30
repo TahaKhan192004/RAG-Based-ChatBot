@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #fff9f1;
+  --fg: #271512;
+  --primary: #3a211d;
+  --terracotta: #7a1f2b;
+  --card: #fff7ef;
+  --muted: #f3e9df;
+  --secondary: #f8e8dc;
+  --accent: #fcdecd;
+  --border: #e8dbd1;
+  --ring: #ca8e79;
+  --muted-fg: #6d5851;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-background: var(--bg);
+  --color-fg: var(--fg);
+  --color-foreground: var(--fg);
+  --color-primary: var(--primary);
+  --color-primary-dark: var(--primary);
+  --color-terracotta: var(--terracotta);
+  --color-card: var(--card);
+  --color-muted: var(--muted);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-border: var(--border);
+  --color-ring: var(--ring);
+  --color-muted-fg: var(--muted-fg);
+  --color-muted-foreground: var(--muted-fg);
+  --font-sans: Manrope, sans-serif;
+  --font-serif: Newsreader, serif;
+  --font-display: Newsreader, serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--bg);
+}
+
+body {
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-manrope), Manrope, sans-serif;
+}
+
+button,
+a,
+input,
+textarea {
+  outline-color: var(--ring);
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--fg);
+}
