@@ -16,7 +16,7 @@ type ChatStreamEvent = {
 const introMessage: ChatMessage = {
   id: "intro",
   role: "assistant",
-  content: "Ask me anything from the uploaded knowledge base.",
+  content: "Hey , I am your AI Savvy Assistant. How can I help you today?",
 };
 
 export function ChatWindow({
@@ -171,7 +171,7 @@ export function ChatWindow({
           AI Savvy Assistant
         </p>
         <p className="text-sm text-muted-fg">
-          Answers from your uploaded knowledge base.
+          Answers all of your queries.
         </p>
       </div>
       <div className="min-h-0 flex-1 overflow-y-auto p-4 sm:p-5">
